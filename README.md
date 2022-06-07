@@ -6,13 +6,13 @@
 
 Septembre-Octobre 2021
 
-Groupe : Juliette, Mailys, Loris, Jeremy
+Groupe : Juliette, Maïlys, Loris, Jeremy
 
 ### 📎 Vidéo de démonstration :
 
 Un aperçu en vidéo, c'est toujours mieux !
 
-lien
+https://youtu.be/RWMQkOCgl_Y
 
 ### 📌 Consignes du projet :
 
