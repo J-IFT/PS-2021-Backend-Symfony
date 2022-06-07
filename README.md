@@ -17,7 +17,7 @@ lien
 ### 📌 Consignes du projet :
 
 Travail à réaliser en groupe d'au plus 4 personnes. Les ressemblances flagrantes entre projets seront sanctionnées.
-Envoyer à l'adresse mathieu.mulot2@reseau-cd.net un lien (Google Drive, OneDrive, ...) vers une archive (zip ou autre extension) contenant à sa racine :
+Envoyer à l'adresse mail de l'intervenant un lien (Google Drive, OneDrive, ...) vers une archive (zip ou autre extension) contenant à sa racine :
   - Le projet Symfony, avec noms de famille des membres du groupe dans le nom du fichier
   - Une image du modèle relationnel, l'export de la base de données au format SQL et un fichier texte contenant les commandes Symfony qui ont été utilisées
 Indiquer « EG2 - TP Symfony » comme objet de l'e-mail et rappeler les membres du groupe dans son corps.
