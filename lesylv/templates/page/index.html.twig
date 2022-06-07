@@ -1,0 +1,66 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Accueil | {{ parent() }}{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l8 offset-l2">
+                <p>
+                    <img src="https://spectre.phnmn.fr/wp-content/uploads/2019/10/Sylvain_Durif_Invoquant_la_vierge_Marie.jpg" class="responsive-img">
+                </p>
+            </div>
+            <div class="row">
+                <div class="col s12 m12 l8 offset-l2">
+                    <p>
+                        ✨ Bienvenue dans notre agence de voyages interstellaires nommée LESYLV ! ✨
+                        Nous proposons un large choix de voyages dans différentes galaxies et planètes qui
+                        se font à bord de nos véhicules cosmiques spécialement élaborés pour ces voyages...
+
+                        Réservez vite votre billet 💫
+                    </p>
+                    <p>
+                        ⭐ Bonus :
+                        <a href="/afficher/test">Afficher une page contenant le titre de votre choix</a>
+                    </p>
+                    <div class="copyright">&copy; Juliette INFANTI, Jeremy DUSSOL et Loris PERCIN </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m4 l3">
+                <div class="article-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBmb-nyLQ1CJmUKYXw6rtn_obqoEIfKCRo8Q&usqp=CAU" class="responsive-img">
+                    <h5><a href="{{ path('galaxie_index') }}">Galaxies</a></h5>
+                </div>
+            </div>
+            <div class="col s12 m4 l3">
+                <div class="article-card">
+                    <img src="data:image/jpeg;base64,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" class="responsive-img">
+                    <h5><a href="{{ path('planete_index') }}">Planètes</a></h5>
+                </div>
+            </div>
+            <div class="col s12 m4 l3">
+                <div class="article-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScOS4b-kvb_O4r2JV1-jd1qQo0noyX9sKFoA&usqp=CAU" class="responsive-img">
+                    <h5><a href="{{ path('vehicule_index') }}">Véhicules</a></h5>
+                </div>
+            </div>
+            <div class="col s12 m4 l3">
+                <div class="article-card">
+                    <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/03A5/production/_116733900_gettyimages-651427181.jpg" class="responsive-img">
+                    <h5><a href="{{ path('voyage_index') }}">Voyages</a></h5>
+                </div>
+            </div>
+            <div class="col s12 m4 l3">
+                <div class="article-card">
+                    <img src="https://static.displate.com/857x1200/displate/2020-03-23/9bd0e28dcbe99bdc3d23c76d76e18ca2_1b33bfd7837d2ee5749552c308aea1d4.jpg" class="responsive-img">
+                    <h5><a href="{{ path('client_index') }}">Clients</a></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

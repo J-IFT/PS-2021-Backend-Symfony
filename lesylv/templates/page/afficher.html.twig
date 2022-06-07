@@ -1,0 +1,26 @@
+{% extends "base.html.twig" %}
+
+{% block title %}{{ slug }}{% endblock %}
+
+{% block body %}
+    <article class="container">
+        <div class="row">
+            <div class="col s12 m12 l8 offset-l2">
+                <h2>{{ slug }}</h2>
+                <p>
+                    <img src="https://scontent-mrs2-1.xx.fbcdn.net/v/t1.6435-9/93006213_117897869872222_825389871299297280_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=973b4a&_nc_ohc=ZB5yWlblSj8AX-mtihR&_nc_ht=scontent-mrs2-1.xx&oh=302316f79adb30a2f7138a939737d59b&oe=619793FC" class="responsive-img">
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m12 l8 offset-l2">
+                <p>
+                    🌟 Cette page a pour utilité d'être affichée avec le titre de votre choix, vous êtes arrivé ici
+                    car dans la paramètre de l'url il est écrit "/test", il suffit juste d'écrire ce que vous
+                    voulez à la place de test et le titre changera en fonction 🌟
+                </p>
+                <div class="copyright">&copy; Juliette INFANTI, Jeremy DUSSOL et Loris PERCIN </div>
+            </div>
+        </div>
+    </article>
+{% endblock %}

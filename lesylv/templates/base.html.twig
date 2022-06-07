@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Accueil{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block stylesheets %}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="{{asset('static/css/sylv.css')}}" />
+    {% endblock %}
+</head>
+<body>
+<nav>
+    <div class="nav">
+        <div class="container">
+            <a href="#" class="brand-logo">Agence de voyage LESYLV</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="/">Accueil</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+{% block body %}
+
+{% endblock %}
+
+</body>
+</html>

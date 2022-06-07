@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Voyages{% endblock %}
+
+{% block body %}
+    <h1>Voyages</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom planète arrivé</th>
+                <th>Nom vehicule</th>
+                <th>DateDepart</th>
+                <th>DateArrive</th>
+                <th>NombreVoyageur</th>
+                <th>Cout</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for voyage in voyages %}
+            <tr>
+                <td>{{ voyage.id }}</td>
+                <td>{{ voyage.idPlanete.nom }}</td>
+                <td>{{ voyage.idVehicule.nom }}</td>
+                <td>{{ voyage.dateDepart ? voyage.dateDepart|date('Y-m-d') : '' }}</td>
+                <td>{{ voyage.dateArrive ? voyage.dateArrive|date('Y-m-d') : '' }}</td>
+                <td>{{ voyage.nombreVoyageur }}</td>
+                <td>{{ voyage.cout }}</td>
+                <td>
+                    <a href="{{ path('voyage_show', {'id': voyage.id}) }}">Afficher</a>
+                    <a href="{{ path('voyage_edit', {'id': voyage.id}) }}">Modifier</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">Pas de resultat</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('voyage_new') }}">Creer nouveau voyage</a>
+{% endblock %}

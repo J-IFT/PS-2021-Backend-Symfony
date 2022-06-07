@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier une planete{% endblock %}
+
+{% block body %}
+    <h1>Modifier une planete</h1>
+
+    {{ include('planete/_form.html.twig', {'button_label': 'Mettre à jour'}) }}
+
+    <a href="{{ path('planete_index') }}">Retour</a>
+
+    {{ include('planete/_delete_form.html.twig') }}
+{% endblock %}

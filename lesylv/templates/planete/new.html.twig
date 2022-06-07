@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nouvelle planete{% endblock %}
+
+{% block body %}
+    <h1>Creer une planete</h1>
+
+    {{ include('planete/_form.html.twig') }}
+
+    <a href="{{ path('planete_index') }}">Retour</a>
+{% endblock %}

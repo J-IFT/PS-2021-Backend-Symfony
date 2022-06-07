@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Galaxies{% endblock %}
+
+{% block body %}
+    <h1>Galaxies</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ galaxie.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ galaxie.nom }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('galaxie_index') }}">Retour</a>
+
+    <a href="{{ path('galaxie_edit', {'id': galaxie.id}) }}">Modifier</a>
+
+    {{ include('galaxie/_delete_form.html.twig') }}
+{% endblock %}

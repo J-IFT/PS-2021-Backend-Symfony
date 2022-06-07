@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Galaxies{% endblock %}
+
+{% block body %}
+    <h1>Galaxies</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for galaxie in galaxies %}
+            <tr>
+                <td>{{ galaxie.id }}</td>
+                <td>{{ galaxie.nom }}</td>
+                <td>
+                    <a href="{{ path('galaxie_show', {'id': galaxie.id}) }}">Afficher</a>
+                    <a href="{{ path('galaxie_edit', {'id': galaxie.id}) }}">Modifier</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">Pas de resultat</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('galaxie_new') }}">Creer nouvelle galaxie</a>
+{% endblock %}

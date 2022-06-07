@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Planetes{% endblock %}
+
+{% block body %}
+    <h1>Planetes</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom galaxie</th>
+                <th>Nom planète</th>
+                <th>Distance</th>
+                <th>Type</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for planete in planetes %}
+            <tr>
+                <td>{{ planete.id }}</td>
+                <td>{{ planete.idGalaxie.nom }}</td>
+                <td>{{ planete.nom }}</td>
+                <td>{{ planete.distance }}</td>
+                <td>{{ planete.type }}</td>
+                <td>
+                    <a href="{{ path('planete_show', {'id': planete.id}) }}">Afficher</a>
+                    <a href="{{ path('planete_edit', {'id': planete.id}) }}">Modifier</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">Pas de resultat</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('planete_new') }}">Creer nouvelle planete</a>
+{% endblock %}

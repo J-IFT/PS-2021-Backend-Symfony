@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Planetes{% endblock %}
+
+{% block body %}
+    <h1>Planetes</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ planete.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom galaxie</th>
+                <td>{{ planete.idGalaxie.nom }}</td>
+            </tr>
+            <tr>
+                <th>Nom planète</th>
+                <td>{{ planete.nom }}</td>
+            </tr>
+            <tr>
+                <th>Distance</th>
+                <td>{{ planete.distance }}</td>
+            </tr>
+            <tr>
+                <th>Type</th>
+                <td>{{ planete.type }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('planete_index') }}">Retour</a>
+
+    <a href="{{ path('planete_edit', {'id': planete.id}) }}">Modifier</a>
+
+    {{ include('planete/_delete_form.html.twig') }}
+{% endblock %}
