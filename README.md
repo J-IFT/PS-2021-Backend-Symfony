@@ -1,10 +1,20 @@
-📚 𝙏𝙋 𝙎𝙮𝙢𝙛𝙤𝙣𝙮
+# PS-2021-Backend-Symfony
 
-𝙂𝙧𝙤𝙪𝙥𝙚 : 𝙅𝙪𝙡𝙞𝙚𝙩𝙩𝙚, 𝙅𝙚𝙧𝙚𝙢𝙮, 𝙈𝙖ï𝙡𝙮𝙨, 𝙇𝙤𝙧𝙞𝙨
+*PS = Projet Scolaire*
 
-𝑹𝑨𝑷𝑷𝑬𝑳 𝑫𝑼 𝑻𝑷:
+## 📚 Projet Scolaire | Réalisation d'un backend symfony
 
-ᴄᴏɴsɪɢɴᴇs:
+Septembre-Octobre 2021
+
+Groupe : Juliette, Mailys, Loris, Jeremy
+
+### 📎 Vidéo de démonstration :
+
+Un aperçu en vidéo, c'est toujours mieux !
+
+lien
+
+### 📌 Consignes du projet :
 
 Travail à réaliser en groupe d'au plus 4 personnes. Les ressemblances flagrantes entre projets seront sanctionnées.
 Envoyer à l'adresse mathieu.mulot2@reseau-cd.net un lien (Google Drive, OneDrive, ...) vers une archive (zip ou autre extension) contenant à sa racine :
@@ -12,13 +22,10 @@ Envoyer à l'adresse mathieu.mulot2@reseau-cd.net un lien (Google Drive, OneDriv
   - Une image du modèle relationnel, l'export de la base de données au format SQL et un fichier texte contenant les commandes Symfony qui ont été utilisées
 Indiquer « EG2 - TP Symfony » comme objet de l'e-mail et rappeler les membres du groupe dans son corps.
 
-
-éɴᴏɴᴄé: 
-
 Le but du projet est de créer un Backend Symfony permettant de gérer les données d'une base MySQL relative à l'un des thèmes suivants : voyages, transports ou locations (sauf biens immobiliers) tels que vols, trains, voyages avec lieux visités, location de véhicules Le schéma de la base de données doit comporter 4-5 tables avec au moins une table d'association.
 Les étapes de réalisation sont les suivantes :
 
-🔘 Création de la base de données MySQL e Création du projet Symfony 5
+🔘 Création de la base de données MySQL et Création du projet Symfony 5
 
 🔘 Création des entités par reverse-engineering (de la BD vers les entités Doctrine)
 
@@ -28,3 +35,13 @@ Les étapes de réalisation sont les suivantes :
 
 L'utilisation du format yaml et/ou annotations est libre. Des points bonus seront accordés si des services Symfony sont créés.
 
+### 💻 Applications et langages utilisés :
+
++ PHP Symfony, MySQL
++ PhpStorm, SQL Server Management Studio
+
+
+
+
+## 🌸 Merci !
+© J-IFT
